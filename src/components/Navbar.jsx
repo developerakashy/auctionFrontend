@@ -34,12 +34,12 @@ const Navbar = ({user, fetchUser}) => {
 
     return(
         <>
-            <div className="shadow-sm backdrop-blur bg-white sticky top-0 flex justify-end sm:justify-between px-6 items-center ">
+            <div className="border-b-2 backdrop-blur  z-20 sticky top-0 flex justify-end sm:justify-between px-4 sm:px-14 items-center ">
                 <div className="sm:flex sm:gap-6 hidden sm:block">
                     <NavLink to='/' className='border-y-4 border-transparent tracking-wide font-bold border-b-indigo-600 py-4'>Listings</NavLink>
                     <NavLink to='/category' className='border-y-4 border-transparent tracking-wide font-bold text-gray-500 hover:text-black py-4'>Category</NavLink>
-                    <NavLink to='/createListing' className='border-y-4 border-transparent tracking-wide font-bold text-gray-500 hover:text-black py-4'>create</NavLink>
-                    <NavLink className='border-y-4 border-transparent tracking-wide font-bold text-gray-500 hover:text-black py-4'>My Listings</NavLink>
+                    <NavLink to='/createListing' className='border-y-4 border-transparent tracking-wide font-bold text-gray-500 hover:text-black py-4'>Create</NavLink>
+                    <NavLink className='border-y-4 border-transparent tracking-wide font-bold text-gray-500 hover:text-black py-4'>WishList(2)</NavLink>
                 </div>
 
                 {user.loader && <div className="px-4 py-2 mr-4 font-bold">Loading...</div>}
